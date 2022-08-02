@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta name="keywords" content="띠부씰,도감">
         <meta name="description" content="띠부띠부씰 도감">
@@ -24,39 +24,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body {
-        background-color: black;
-        color: #fff;
-      }
-      a {
-        color: #ddd;
-        text-decoration: none;
-      }
+      body {background-color: black;color: #fff;}
+      a {color: #ddd;text-decoration: none;}
+      .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
+      .pokedoc {background:url("image/Pokedoc.png") no-repeat; background-size: 619px 619px;}
+      .coookiedoc {background:url("image/cookierunkingdom.png") no-repeat; background-size: 619px 619px;}
+      .jjanggudoc {background:url("image/samyang_jjanggu.png") no-repeat; background-size: 619px 619px;}
+      .image {position:relative; display:inline-block; width:605px; height:619px; margin: 1px; cursor:pointer;}
+      .image1 {position:relative; display:inline-block; width:617px; height:619px; margin: 1px; cursor:pointer;}
+      .image2 {position:relative; display:inline-block; width:612px; height:619px; margin: 1px; cursor:pointer;}
+      .image > div {width:100%; height:100%; position:absolute; border: 1px solid black;}
+      .textDiv {color:white; margin-top:20px;}
+      .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
+      .textDiv ul li span {color:crimson;}
+      body {background-color: black;}
+      .btnDiv {margin-top:20px;}
+      .title {text-align:center; font-size:40px; margin-bottom:20px; color:white;}
+      .menu {text-align:right; font-size:20px; margin-bottom:20px; color:white;}
+      .menu a {text-decoration: none; text-align:right; font-size:20px; margin-bottom:20px; color:white;}
+      .linkStr {width:100%; max-width: 300px; margin-top:10px;}
+      .linkLabel, .checkCnt {color:white; margin-bottom: 10px;}
+      .textDiv {color:white; margin-top:20px;}
+      .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
+      .textDiv ul li span {color:crimson;}
+      #imageDiv { padding-right: 2.5px; text-align: center;} 
+      .flex {display: flex;}
+      #downloadBtn { margin: 0 10px; }
+      .selected {background-color: rgba(0,0,0,0.7);}
     </style>
     <title>모음을 편하게 moadocs</title>
 </head>
 <body>
-  <h1>moadocs</h1>
-  <h2>띠부씰 도감 페이지 모음</h2>
-  <h3>
-    <a href="https://moadocs.github.io/pokedoc/">포켓몬빵</a>
-    https://moadocs.github.io/pokedoc/
-  </h3>
-  <h3>
-    <a href="https://moadocs.github.io/bbangbbangducks/">빵빵덕</a>
-    https://moadocs.github.io/bbangbbangducks/
-  </h3>
-  <h3>
-    <a href="https://moadocs.github.io/thangthangchicken/">땅땅치킨</a>
-    https://moadocs.github.io/thangthangchicken/
-  </h3>
-  <h3>
-    <a href="https://moadocs.github.io/cookiecrayon/">삼양짱구</a>
-    https://moadocs.github.io/cookiecrayon/
-  </h3>
-  <h3>
-    <a href="https://moadocs.github.io/cookierunkingdom/">쿠키런킹덤</a>
-    https://moadocs.github.io/cookierunkingdom/
-  </h3>
+  <div class="title">모음을 편하게 moadocs</div>
+  
+  <div id="imageDiv">
+    <h2>띠부씰 도감 페이지 모음</h2>
+    <h3>포켓몬빵 2022</h3>
+    
+    <a href="https://moadocs.github.io/pokedoc/">
+    <div class="image pokedoc img01"><div></div></div>
+    <br/>
+      https://moadocs.github.io/pokedoc/</a>
+
+  <h3>빵빵덕</h3>
+
+    <a href="https://moadocs.github.io/bbangbbangducks/">https://moadocs.github.io/bbangbbangducks/</a>
+
+  <h3>땅땅치킨</h3>
+
+    <a href="https://moadocs.github.io/thangthangchicken/">https://moadocs.github.io/thangthangchicken/</a>
+
+  <h3>삼양짱구</h3>
+    
+  <a href="https://moadocs.github.io/cookiecrayon/">
+  <div class="image2 jjanggudoc img01"><div></div></div>
+  <br/>
+      https://moadocs.github.io/cookiecrayon/</a>
+
+  <h3>쿠키런킹덤</h3>
+    
+  <a href="https://moadocs.github.io/cookierunkingdom/">
+  <div class="image1 coookiedoc img01"><div></div></div>
+  <br/>
+      https://moadocs.github.io/cookierunkingdom/</a>
+
+  </div>
+    <div class="textDiv">
+    <h2>사용법</h2>
+    <ul>
+        <li>띠부씰 클릭 : 띠부씰이 선택 됩니다.</li>
+        <li>선택반전 : 선택한 띠부씰이 반전 됩니다.</li>
+        <li>이미지저장 : 현재 선택된 상태로 이미지가 저장됩니다. 
+            <br><span>* 현재 화면의 배열대로 저장되기 때문에 창크기 조절 후 이미지 저장 하시면 원하는 배열로 저장 됩니다. (PC에서 하는것을 추천)</span>
+            <br><span>* 삼성 인터넷 브라우저 사용자 및 위 이미지 저장 버튼이 안 먹으면 아래 버튼으로 다운로드 버튼을 직접 생성 하여 저장 가능.</span>
+        </li>
+        <div class="flex">
+            <div id="downloadBtn"></div>
+        </div>
+        <li>링크복사 : 현재 선택된 띠부씰이 포함된 URL을 복사합니다 <br><span>* 복사한 URL로 접속시 선택한 띠부씰이 유지됩니다.</span></li>
+    </ul>
+</div>
+
 </body>
 </html>
