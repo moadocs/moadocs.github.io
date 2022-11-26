@@ -25,10 +25,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {background-color: black;color: #fff;}
-      a {color: #ddd;text-decoration: none;}
+      a {color: #ddd; text-decoration: none;}
       .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
-      .pokedoc {background:url("image/Pokedoc.png") no-repeat; background-size: 619px 619px;}
+      .pokedoc { background:url("image/Pokedoc.png") no-repeat; background-size: 619px 619px;}
+      .kerodoc { background:url("image/kerorodoc.png") no-repeat; background-size: 619px 619px;}
+      .annedoc { background:url("image/anne.png") no-repeat; background-size: 619px 619px;}
+      .digidoc { background:url("image/digimon.png") no-repeat; background-size: 619px 619px;}
+      .mapledoc { background:url("image/maple.png") no-repeat; background-size: 619px 619px;}
+      .teenie { background:url("image/teenieping.png") no-repeat; background-size: 619px 619px;}
       .coookiedoc {background:url("image/cookierunkingdom.png") no-repeat; background-size: 619px 619px;}
+      .chunsik {background:url("image/chunsik.png") no-repeat; background-size: 619px 619px;}
+      .yfdocs {background:url("image/youngforest.png") no-repeat; background-size: 619px 619px;}
+      .carebear {background:url("image/carebear.png") no-repeat; background-size: 619px 619px;}
+      .thang {background:url("image/thangthangttibu.png") no-repeat; background-size: 619px 619px;}
+      .bbang {background:url("image/ducks.png") no-repeat; background-size: 619px 619px;}
+      .notted {background:url("image/notted.png") no-repeat; background-size: 619px 619px;}
+      .nottedsam {background:url("image/nottedsamlip.png") no-repeat; background-size: 619px 619px;}
       .jjanggudoc {background:url("image/samyang_jjanggu.png") no-repeat; background-size: 619px 619px;}
       .image {position:relative; display:inline-block; width:605px; height:619px; margin: 1px; cursor:pointer;}
       .image1 {position:relative; display:inline-block; width:617px; height:619px; margin: 1px; cursor:pointer;}
@@ -47,47 +59,84 @@
       .textDiv {color:white; margin-top:20px;}
       .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
       .textDiv ul li span {color:crimson;}
-      #imageDiv { padding-right: 2.5px; text-align: center;} 
+      #imageDiv { width: 100%; padding-right: 2.5px;} 
+      #imageDiv > a { display:inline-block; margin: 5px; width:120px; height:100px; cursor:pointer;}
       .flex {display: flex;}
       #downloadBtn { margin: 0 10px; }
       .selected {background-color: rgba(0,0,0,0.7);}
+      a > h3 { text-align: center; color:aqua ; background-color: rgba(0,0,0,0.5); opacity: 1;}
     </style>
     <title>모음을 편하게 moadocs</title>
 </head>
 <body>
-  <div class="title">모음을 편하게 moadocs</div>
-  
+  <div class="title">모음을 편하게 Moadocs</div>
+  <ins class="kakao_ad_area" style="display:none;"
+  data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
+  data-ad-width = "320"
+  data-ad-height = "50"></ins>
   <div id="imageDiv">
     <h2>띠부씰 도감 페이지 모음</h2>
-    <h3>포켓몬빵 2022</h3>
     
-    <a href="https://moadocs.github.io/pokedoc/">
-    <div class="image pokedoc img01"><div></div></div>
-    <br/>
-      https://moadocs.github.io/pokedoc/</a>
-
-  <h3>빵빵덕</h3>
-
-    <a href="https://moadocs.github.io/bbangbbangducks/">https://moadocs.github.io/bbangbbangducks/</a>
-
-  <h3>땅땅치킨</h3>
-
-    <a href="https://moadocs.github.io/thangthangchicken/">https://moadocs.github.io/thangthangchicken/</a>
-
-  <h3>삼양짱구</h3>
-    
-  <a href="https://moadocs.github.io/cookiecrayon/">
-  <div class="image2 jjanggudoc img01"><div></div></div>
-  <br/>
-      https://moadocs.github.io/cookiecrayon/</a>
-
-  <h3>쿠키런킹덤</h3>
-    
-  <a href="https://moadocs.github.io/cookierunkingdom/">
-  <div class="image1 coookiedoc img01"><div></div></div>
-  <br/>
-      https://moadocs.github.io/cookierunkingdom/</a>
-
+    <a class="pokedoc" href="https://moadocs.github.io/pokedoc/">
+      <h3>포켓몬빵</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="digidoc" href="https://moadocs.github.io/digimon/">
+      <h3>디지몬빵</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="kerodoc" href="https://moadocs.github.io/keroro/">
+      <h3>케로로빵</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="annedoc" href="https://moadocs.github.io/anne/">
+      <h3>앤빵</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="coookiedoc" href="https://moadocs.github.io/cookierunkingdom/">
+      <h3>쿠키런킹덤</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="mapledoc" href="https://msbread.github.io/msbreadtest/">
+      <h3>메이플빵</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="teenie" href="https://moadocs.github.io/teenieping/">
+      <h3>티니핑</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="chunsik" href="https://moadocs.github.io/chunsik/">
+      <h3>춘식이</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="yfdocs" href="https://moadocs.github.io/youngforest/">
+      <h3>꽃카</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="carebear" href="https://moadocs.github.io/carebear/">
+      <h3>케어베어</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="nottedsam" href="https://moadocs.github.io/nottedsamlip/">
+      <h3>노티드삼립</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="notted" href="https://moadocs.github.io/notted/">
+      <h3>노티드</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="jjanggudoc" href="https://moadocs.github.io/cookiecrayon/">
+      <h3>삼양짱구</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="thang" href="https://moadocs.github.io/thangthangchicken/">
+      <h3>땅땅치킨</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
+    <a class="bbang" href="https://moadocs.github.io/bbangbbangducks/">
+      <h3>빵빵덕</h3>
+      <h3>=> 바로 가기</h3>
+    </a>
   </div>
     <div class="textDiv">
     <h2>사용법</h2>
@@ -105,11 +154,15 @@
     </ul>
 </div>
 <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
+data-ad-width = "320"
+data-ad-height = "50"></ins>
+<!-- <ins class="kakao_ad_area" style="display:none;"
 data-ad-unit = "DAN-9h5uzEXExUlwSYWq"
 data-ad-width = "728"
 data-ad-height = "90"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
 
 </body>
 </html>
