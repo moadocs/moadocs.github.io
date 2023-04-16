@@ -22,4 +22,7 @@
     .half .warning {
         display: none;
     }
+    .half .form{
+        width: 100%;
+    }
   }
