@@ -187,6 +187,8 @@ data-ad-height = "50"></ins>
         if(confirm("전송하시겠습니까?")){
             alert("성공적으로 전송되었습니다")
             location.href="https://moadocs.github.io/"
+        } else {
+            return false
         }
     };
     document.addEventListener("submit", e => {
