@@ -18,3 +18,8 @@
     min-height: 250px;
 }
 
+  @media (min-width: 721px) {
+    .half .warning {
+        display: none;
+    }
+  }
