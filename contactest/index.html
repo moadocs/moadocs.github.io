@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="띠부씰,도감">
+        <meta name="description" content="띠부띠부씰 도감">
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="robots" content="noindex">
+        <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="도감페이지 모음">
+        <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="지금 까지 만든 도감들 총집 페이지">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W722HT2CM"></script>
+<script src="https://kit.fontawesome.com/2628447209.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../header.css" />
+<link rel="stylesheet" href="./contact.css" />
+<style>
+    body {background-color: black;color: #fff;}
+    a {color: #ddd; text-decoration: none;}
+    li {
+        list-style: none;
+    }
+    .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
+    .pokedoc { background:url("image/Pokedoc.png") no-repeat; background-size: 619px 619px;}
+    .pokedoc1 { background:url("image/Pokedoc1.png") no-repeat; background-size: 619px 619px;}
+    .pokedoc2 { background:url("image/Pokedoc2.png") no-repeat; background-size: 619px 619px;}
+    .pokedocH { background:url("image/halloween.jpeg") no-repeat; background-size: 619px 619px;}
+    .pokedocW { background:url("image/PokedocWinter.png") no-repeat; background-size: 619px 619px;}
+    .kerodoc { background:url("image/kerorodoc.png") no-repeat; background-size: 619px 619px;}
+    .annedoc { background:url("image/anne.png") no-repeat; background-size: 619px 619px;}
+    .dragondoc { background:url("image/dragon.png") no-repeat; background-size: 619px 619px;}
+    .pokecircledoc { background:url("image/pokecircle.png") no-repeat; background-size: 619px 619px;}
+    .digidoc { background:url("image/digimon.png") no-repeat; background-size: 619px 619px;}
+    .mapledoc { background:url("image/maple.png") no-repeat; background-size: 619px 619px;}
+    .onepiecedoc { background:url("image/onepiece.png") no-repeat; background-size: 619px 619px;}
+    .maple2doc { background:url("image/maple2.png") no-repeat; background-size: 619px 619px;}
+    .teenie { background:url("image/teenieping.png") no-repeat; background-size: 619px 619px;}
+    .coookiedoc {background:url("image/cookierunkingdom.png") no-repeat; background-size: 619px 619px;}
+    .coookiedoc2 {background:url("image/cookierunkingdom2.png") no-repeat; background-size: 619px 619px;}
+    .coookiedoc3 {background:url("image/cookierunkingdom3.png") no-repeat; background-size: 619px 619px;}
+    .chunsik {background:url("image/chunsik.png") no-repeat; background-size: 619px 619px;}
+    .yfdocs {background:url("image/youngforest.png") no-repeat; background-size: 619px 619px;}
+    .carebear {background:url("image/carebear.png") no-repeat; background-size: 619px 619px;}
+    .thang {background:url("image/thangthangttibu.png") no-repeat; background-size: 619px 619px;}
+    .bbang {background:url("image/ducks.png") no-repeat; background-size: 619px 619px;}
+    .notted {background:url("image/notted.png") no-repeat; background-size: 619px 619px;}
+    .nottedsam {background:url("image/nottedsamlip.png") no-repeat; background-size: 619px 619px;}
+    .jjanggudoc {background:url("image/samyang_jjanggu.png") no-repeat; background-size: 619px 619px;}
+    .image {position:relative; display:inline-block; width:605px; height:619px; margin: 1px; cursor:pointer;}
+    .image1 {position:relative; display:inline-block; width:617px; height:619px; margin: 1px; cursor:pointer;}
+    .image2 {position:relative; display:inline-block; width:612px; height:619px; margin: 1px; cursor:pointer;}
+    .image > div {width:100%; height:100%; position:absolute; border: 1px solid black;}
+    .textDiv {color:white; margin-top:20px;}
+    .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
+    .textDiv ul li span {color:crimson;}
+    body {background-color: black;}
+    .btnDiv {margin-top:20px;}
+    .title {text-align:center; font-size:40px; margin-bottom:20px; color:white;}
+    .menu {text-align:right; font-size:20px; margin-bottom:20px; color:white;}
+    .menu a {text-decoration: none; text-align:right; font-size:20px; margin-bottom:20px; color:white;}
+    .linkStr {width:100%; max-width: 300px; margin-top:10px;}
+    .linkLabel, .checkCnt {color:white; margin-bottom: 10px;}
+    .textDiv {color:white; margin-top:20px;}
+    .textDiv ul {list-style: decimal; padding-left:20px; margin-top:5px;}
+    .textDiv ul li span {color:crimson;}
+    #imageDiv { width: 100%; padding-right: 2.5px;} 
+    #imageDiv > a { display:inline-block; margin: 5px; width:120px; height:100px; cursor:pointer;}
+    .flex {display: flex;}
+    #downloadBtn { margin: 0 10px; }
+    .selected {background-color: rgba(0,0,0,0.7);}
+    body.negative {background-color: white; color: black;}
+    body.negative .title {color: black;}
+    body.negative .textDiv {color: black;}
+    body.negative .menu, body.negative .menu a  {color: black;}
+    body.negative .linkLabel, body.negative .checkCnt {color:black; margin-bottom: 10px;} {color: black;}
+          
+    a > h3 { text-align: center; color:aqua ; background-color: rgba(0,0,0,0.5); opacity: 1;}
+    </style>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1W722HT2CM');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3067887546047208"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기</title>
+</head>
+<body>
+    <header class="PMS_Header_UI">
+        <div class="Header__Users">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="Header__Btns UI">
+            <a class="titleBtn"> 포켓몬빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/">1+2세대</a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/1st/">1세대</a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/2nd_fix/">2세대</a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/halloween/">할로윈</a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/winter/">겨울 왕띠부</a>
+            <a class="navBtn" href="https://moadocs.github.io/pokedoc/lovelyparty/">러블리파티</a>
+            <a class="titleBtn"> 원피스빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/onepiece/">바로가기</a>
+            <a class="titleBtn"> 메이플빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/maplestory/1st/">1세대</a>
+            <a class="navBtn" href="https://moadocs.github.io/maplestory/2nd/">2세대</a>
+            <a class="titleBtn"> 디지몬빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/digimon/">바로가기</a>
+            <a class="titleBtn"> 케로로빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/keroro/">바로가기</a>
+            <a class="titleBtn"> 쿠키런빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/cookierunkingdom/">바로가기</a>
+            <a class="titleBtn"> 앤빵 </a>
+            <a class="navBtn" href="https://moadocs.github.io/anne/">바로가기</a>
+        </div>
+          <h1></h1>
+        </div>
+      </header>
+      <div class="title">
+          <a href="https://moadocs.github.io/" >모음을 편하게 Moadocs.</a>
+      </div>
+      <ins class="kakao_ad_area" style="display:none;"
+      data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
+      data-ad-width = "320"
+      data-ad-height = "50"></ins>
+      <div class="half">
+        <div class="warning">
+            아직 미완성인 기능입니다.<br/><br/>
+             - 그림 파일 첨부 해서 전송하는 기능을 추가... 하고 싶음<br/>
+             - 더 강력한 보안... 하고 싶음<br/><br/>
+            그래도 메세지 만큼은 제대로 전달 되고 있으니<br/>
+            편하게 이용해주세요 ^^<br/><br/>
+            답장은 입력하신 이메일로 전달합니다.
+        </div>
+        <div class="form">
+            제작자에게 메일 보내기
+            <form class="subform" onsubmit="return false;">
+               <!-- <div class="subfotm" 
+                method="POST" data-email="ask@moadocs.github.io"
+                onsubmit="check();"
+                action="https://script.google.com/macros/s/AKfycbwp0ONT5O91BbqK7v1s2rrFWimwIKfvkMURGHzCXuVGJsF8Wcj1wW3P-NYqC5L4dbpm/exec"
+                target="frAttachFiles"> -->
+                <ul>
+                    <li>
+                        <div>
+                            <input type="text" required name="name" id="uname" placeholder="*Name">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="email" required name="email" id="uemail" placeholder="*Email">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <textarea name="message" id="umessage" placeholder="Message"></textarea>
+                        </div>
+                        <button onclick="submitForm()">전송</button>
+                    </li>
+                </ul>
+            <!-- </div> -->
+            </form>
+        <iframe name="frAttachFiles" style="display: none"></iframe>
+        </div>
+      </div>
+      <ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
+data-ad-width = "320"
+data-ad-height = "50"></ins>
+</body>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<script>
+    const formtag = document.getElementsByClassName("subform")
+    const nameInput = document.getElementById("uname")
+    const emailInput = document.getElementById("uemail")
+    const messageInput = document.getElementById("umessage")
+    function erase(){
+        nameInput.value = ""
+        emailInput.value = ""
+        messageInput.value = ""
+    };
+    function check(e){
+        let data = new FormData(formtag[0]);
+        console.log("")
+        if(confirm("전송하시겠습니까?")){
+            fetch("https://script.google.com/macros/s/AKfycbwp0ONT5O91BbqK7v1s2rrFWimwIKfvkMURGHzCXuVGJsF8Wcj1wW3P-NYqC5L4dbpm/exec",{
+                method: "POST",
+                body: data 
+            });
+            alert("성공적으로 전송되었습니다")
+            // location.href="https://moadocs.github.io/"
+        } else {
+            alert("전송 취소 되었습니다.")
+        }
+    };
+    function submitForm(){
+        check();
+    };
+</script>
+
+</html>
