@@ -1,0 +1,20 @@
+.half{
+    display: flex;
+
+}
+
+.half .warning,
+.half .form {
+    padding: 20px;
+    width: 50%;
+}
+
+.form ul li div #uname,
+.form ul li div #uemail{
+    width: 50%;
+}
+.form ul li div #umessage{
+    width: 90%;
+    min-height: 250px;
+}
+

@@ -1,0 +1,145 @@
+.PMS_Header {
+    display: inline;
+    position: fixed;
+    background: black;
+    color: white;
+    top: 0;
+    /* width: 10%; */
+    height: 33px;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+  body.negative .PMS_Header,
+  body.negative .Header__name,
+  body.negative .Header__welcome,
+  body.negative .PMS_Header_UI{
+    color: black
+  }
+  .Header__name {
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0px 8px;
+  }
+  .Header__welcome {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 3px;
+    font-weight: 900;
+  }
+  
+  .titleBtn {
+    background: linear-gradient(
+        to right,
+        rgb(40, 160, 255, .9),
+        rgb(40, 160, 255, .75)
+      );
+    padding: 8px 10px;
+    color: white;
+  }
+
+  .navBtn {
+    min-width: 200px;
+    cursor: pointer;
+    padding: 8px 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navBtn:hover {
+    background-color:   rgb(0, 132, 236);
+  }
+  
+  .navBtn.now {
+    background-color: gray;
+  }
+  
+  .PMS_Header_UI {
+    display: inline-block;
+    color: white;
+    top: 0;
+    width: 20px;
+    height: 33px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* @media (max-width: 720px) { */
+    .Header__Users {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  
+    .Header__Btns {
+      opacity: 0;
+      background: linear-gradient(
+        to right,
+        rgb(40, 160, 255, .9),
+        rgb(40, 160, 255, .75)
+      );
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 33px;
+      left: -225px;
+      display: flex;
+      height: 100%;
+      height: 100%;
+      flex-direction: column;
+  
+      transform: translate(0px, 0px);
+      transition-duration: 0.5s;
+    }
+  
+    /* .Header__Btns.UI {
+      background: none;
+    } */
+    .Header__Users .logOut.navBtn .logOut.titleBtn {
+      display: none;
+    }
+    .menu.navBtn {
+      display: flex;
+      background: none;
+    }
+    .Header__Users:hover + .Header__Btns,
+    .Header__Btns:hover {
+      transform: translate(220px, 0px);
+      opacity: 1;
+      transition-duration: 0.5s;
+      z-index: 999;
+    }
+  
+    .PMS_Header {
+      justify-content: space-between;
+    }
+  /* } */
+  
+  /* @media (min-width: 721px) {
+    .Header__Users{
+        width: 14px;
+        display: flex;
+    }
+
+    .Header__Btns {
+        display: block;
+    }
+  
+    .menu.navBtn {
+      display: none;
+    }
+  
+    .Header__Btns .logOut.navBtn {
+      display: none;
+    }
+  } */
+  
+  .PMS_Footer.popup {
+    height: 15px;
+  }
+  
+  .js-clock h1 {
+    font-size: 20px;
+  }
+  
+  

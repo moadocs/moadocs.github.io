@@ -26,6 +26,12 @@
     <style>
       body {background-color: black;color: #fff;}
       a {color: #ddd; text-decoration: none;}
+      .contact {
+        padding: 5px;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+      }
       .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
       .pokedoc { background:url("image/Pokedoc.png") no-repeat; background-size: 619px 619px;}
       .pokedoc1 { background:url("image/Pokedoc1.png") no-repeat; background-size: 619px 619px;}
@@ -74,11 +80,50 @@
       .flex {display: flex;}
       #downloadBtn { margin: 0 10px; }
       .selected {background-color: rgba(0,0,0,0.7);}
+      body.negative {background-color: white; color: black;}
+      body.negative .title {color: black;}
+      body.negative .textDiv {color: black;}
+      body.negative .menu, body.negative .menu a  {color: black;}
+      body.negative .linkLabel, body.negative .checkCnt {color:black; margin-bottom: 10px;} {color: black;}
+            
       a > h3 { text-align: center; color:aqua ; background-color: rgba(0,0,0,0.5); opacity: 1;}
     </style>
+    <script src="https://kit.fontawesome.com/2628447209.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../header.css" />
     <title>모음을 편하게 moadocs</title>
 </head>
-<body>
+<body id="body">
+  <div class="contact"> 
+    <a href="https://moadocs.github.io/contact">제작자에게 메일 보내기 <i class="fa-regular fa-paper-plane"></i> 
+    </a>
+  </div>
+  <header class="PMS_Header_UI">
+    <div class="Header__Users">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="Header__Btns UI">
+        <a class="titleBtn"> 포켓몬빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/">1+2세대</a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/1st/">1세대</a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/2nd_fix/">2세대</a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/halloween/">할로윈</a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/winter/">겨울 왕띠부</a>
+        <a class="navBtn" href="https://moadocs.github.io/pokedoc/lovelyparty/">러블리파티</a>
+        <a class="titleBtn"> 원피스빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/onepiece/">바로가기</a>
+        <a class="titleBtn"> 메이플빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/maplestory/1st/">1세대</a>
+        <a class="navBtn" href="https://moadocs.github.io/maplestory/2nd/">2세대</a>
+        <a class="titleBtn"> 디지몬빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/digimon/">바로가기</a>
+        <a class="titleBtn"> 케로로빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/keroro/">바로가기</a>
+        <a class="titleBtn"> 쿠키런빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/cookierunkingdom/">바로가기</a>
+        <a class="titleBtn"> 앤빵 </a>
+        <a class="navBtn" href="https://moadocs.github.io/anne/">바로가기</a>
+    </div>
+  </header>
   <div class="title">모음을 편하게 Moadocs.</div>
   <ins class="kakao_ad_area" style="display:none;"
   data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
@@ -86,7 +131,9 @@
   data-ad-height = "50"></ins>
   <div id="imageDiv">
     <h2>띠부씰 도감 페이지 모음</h2>
-    
+    <div class="checkCnt"> 
+      <input type="button" id="ngtBtn" value="배경색 반전"/>
+  </div>
     <a class="pokedoc" href="https://moadocs.github.io/pokedoc/">
       <h3>포켓몬빵</h3>
       <h3>=> 바로 가기</h3>
@@ -217,6 +264,16 @@ data-ad-width = "728"
 data-ad-height = "90"></ins>
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-
+<script>
+  var negativeBtn = document.getElementById('ngtBtn');
+  negativeBtn.addEventListener('click', function(event){
+    var body = document.getElementById('body');
+    if(body.className === "negative"){
+      body.className = ""
+    } else {
+      body.className = "negative"
+    }
+});
+</script>
 </body>
 </html>
