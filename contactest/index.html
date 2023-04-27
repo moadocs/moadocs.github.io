@@ -192,6 +192,7 @@ data-ad-height = "50"></ins>
         if(confirm("전송하시겠습니까?")){
             fetch("https://script.google.com/macros/s/AKfycbwp0ONT5O91BbqK7v1s2rrFWimwIKfvkMURGHzCXuVGJsF8Wcj1wW3P-NYqC5L4dbpm/exec",{
                 method: "POST",
+                mode: "no-cors",
                 body: data 
             });
             alert("성공적으로 전송되었습니다")
